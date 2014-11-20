@@ -19,11 +19,19 @@
    /* CUSTOMIZE THE PLAYER
    -------------------------------------------------- */
 
+  
    body {
     padding-bottom: 40px;
-    color: #5a5a5a;
+    color:  #B2B2B2;
     background-color: rgba(0,0,0,.9)
   }
+
+   h1 h2 {
+    padding-bottom: 40px;
+    color:  #FFFFFF;
+    background-color: rgba(0,0,0,.9)
+  }
+
 
     .inf{
       padding: 14px 20px 16px; /* Increase vertical padding to match navbar links */
@@ -304,7 +312,7 @@
     ================================================== -->
     <div id="myCarousel" class="carousel slide">
       <div class="carousel-inner">
-         <div class="item active">
+      <!--   <div class="item ">
           <img src="images/blogs.png" alt="" style="min-width:100%">
           <div class="container">
             <div class="carousel-caption">
@@ -314,9 +322,9 @@
               <a class="btn btn-large btn-primary" href="#">Interactive platform</a>
             </div>
           </div>
-        </div>
+        </div>-->
 
-        <div class="item ">
+        <div class="item active">
           <img src="images/risk_banner.png" alt="" style="min-width:100%">
           <div class="container">
             <div class="carousel-caption">
@@ -335,7 +343,7 @@
               <h1>Monitoring Food Crisis in the Press</h1>
               <p class="lead">Project in collaboration with UN Global Pulse</p>
               <p style="font:20%" class="lead"><b>Contributors:</b> David Chavalarias (CNRS), et al.<br/>2011  </p><br/><br/>  
-              <a class="btn btn-large btn-primary" href="risk/">Interactive platform</a>
+              <a class="btn btn-large btn-primary" href="http://pulseweb.cortext.net/tubes/risk/">Interactive platform</a>
             </div>
           </div>
         </div>
@@ -347,7 +355,7 @@
               <h1>Science Phylomemies</h1>
               <p class="lead">Reconstruct the evolution of science</p>
               <p style="font:20%" class="lead"><b>Contributors:</b> David Chavalarias (CNRS), et Jean-Philippe Cointet<br/>2013  </p><br/><br/>  
-              <a class="btn btn-large btn-primary" href="htdocs/places_spaces">Interactive platform</a>
+              <a class="btn btn-large btn-primary" href="htdocs/places_spaces">Website</a>
             </div>
           </div>
         </div>
@@ -362,28 +370,30 @@
     <div class="row">
       <!-- /.first column -->            
         <div class="span3" >
+           <img  src="images/logoISCPIF.svg"  width="150px">   
           <h2>About TINA</h2>
           TINA is an informal workgroup at ISC-PIF gathering researchers and engineers from various higher education and research institutions. It relies on the ISC-PIF to host people and infrastructure for its projects.
           <br/><br/><br/>
-          <h3>Open Source Tools</h4>
+          <h3>Open Tools & Data</h4>
           <h4>Community Explorer</h4>
           <img class="img-rounded" src="images/comex.png">   
           <br/><br/>
           <p>Join the >2000 complex systems scholars and generate maps of the complex systems community on the fly. </p>
-          <p><a class="btn" href="http://communityexplorer.org">View details &raquo;</a></p>
-          
+          <p><a class="btn btn-info" href="http://communityexplorer.org">more &raquo;</a></p>
+          <br/>
+
           <h4>Tinaweb</h4>
-          <img class="img-rounded" src="images/demo.png">   
+          <img class="img-rounded" src="images/demo.jpg">   
           <br/><br/>
           <p>Tool for interactive exploration of multipartite graphs</p>
-          <p><a class="btn" href="http://tinasoft.eu">View details &raquo;</a></p>
-          
+          <p><a class="btn btn-info" href="http://tinasoft.eu">View details &raquo;</a></p>
+           <br/>
 
           <h4>Real Time Twitter analytics</h4>
           <img class="img-rounded" src="http://i1.wp.com/tina.iscpif.fr/bigdata/wp-content/uploads/2013/10/Screen-Shot-2013-09-17-at-3.10.52-PM.png?zoom=1.5&resize=348%2C175">   
           <br/><br/>
           <p>Some tweeter analytics tools and a public Twitter dataset, updated in real time.</p>
-          <p><a class="btn" href="bigdata/">View details &raquo;</a></p>
+          <p><a class="btn btn-info" href="bigdata/">View details &raquo;</a></p>
 
             </div><!-- /.span4 -->      
 
@@ -393,37 +403,54 @@
 
         <!-- /.first column -->
         <div class="span4">                
-          <img class="img-circle" src="images/blogs.png"  height="100">
+          <img class="img-circle" src="images/risk_banner_th.png"   height="100">
+          <h3>Which risks should you care about ?</h3>
+          <p>Mapping Worlwide resarche on risks <br/>Project in collaboration with AXA Research Fund.  <br/>Chavalarias, and Cointet 2013</p>
+          <p><a class="btn btn-primary" href="risk/">View details &raquo;</a></p>
+          
+          <br/><br/>        
+          <img class="img-circle" src="images/places_th.png"   height="100">
+          <h3>Science Phylomemies</h3>
+          <p>Reconstructing Science evolution. A case studies on Future and Emerging Technologies<br/>Chavalarias & Cointet 2013</p>
+          <p><a class="btn btn-primary" href="nobel/">View details &raquo;</a></p>
+
+          <br/><br/>                            
+          
+          <img class="img-circle" src="images/pulseweb_th.png"   height="100">
+          <h3>Monitoring Food Crisis</h3>
+          <p>Montoring food crisis worlwide through newspaper mining. <br/>A project made in collaboration with the United Nation initiative UN Global Pulse.  <br/>Chavalarias et al. 2011</p>
+          <p><a class="btn btn-primary" href="#">View details &raquo;</a></p>
+
+          <br/><br/>     
+          <img class="img-circle" src="images/blogs_th.png"  height="100">
           <h3>Mapping controversies</h3>
-          <p>What are the debates i the blogosphere about health and environment ? <br/>Project in collaboration with the French Ministry of Research. Chavalarias, Roth and Cointet. <br/>2010</p>
-          <p><a class="btn" href="veille/mesr/">View details &raquo;</a></p>
+          <p>What are the debates i the blogosphere about health and environment ? <br/>Project in collaboration with the French Ministry of Research. Access on demand<br/>Chavalarias, Roth and Cointet 2010</p>
+          <p><a class="btn btn-primary" href="veille/mesr/">View details &raquo;</a></p>
 
-          <br/><br/>        
-          <img class="img-circle" src="http://tina.iscpif.fr/nobel/images/whatkind.png"   height="100">
-          <h3>What is the social game behind science</h3>
-          <p>An online multi-players game to understand why <i>publish or perish</i> is not everything in science.<br/>2014</p>
-          <p><a class="btn" href="nobel/">View details &raquo;</a></p>
-
-          <br/><br/>        
-          <img class="img-circle" src="images/places.png"   height="100">
-          <h3>Science Phylomemies</h3=>
-          <p>Reconstructing Science evolution.<br/>2013</p>
-          <p><a class="btn" href="nobel/">View details &raquo;</a></p>
+          
         </div><!-- /.span4 -->
 
 
         <!-- /.second column -->
         <div class="span4">        
-          <img class="img-circle" src="images/risk_banner.png"   height="100">
-          <h3>Which risks should you care about ?</h3>
-          <p>Mapping Worlwide resarche on risks <br/>Project in collaboration with AXA Research Fund. Chavalarias, and Cointet. <br/>2013</p>
-          <p><a class="btn" href="risk/">View details &raquo;</a></p>
+          <img class="img-circle" src="images/whatkind_th.png"   height="100">
+          <h3>What is the social game behind science</h3>
+          <p>An online multi-players game to understand why <i>publish or perish</i> is not everything in science.<br/>Chavalarias, Leenart, Panahi 2014</p>
+          <p><a class="btn btn-primary" href="nobel/">View details &raquo;</a></p>
+
           
           <br/><br/>        
-          <img class="img-circle" src="images/pulseweb.png"   height="100">
-          <h3>Monitoring Food Crisis</h3>
-          <p>Montoring food crisis worlwide through newspaper mining. <br/>A project made in collaboration with the United Nation initiative UN Global Pulse. Chavalarias et al. <br/>2011</p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
+          <img class="img-circle" src="images/municipales_th.png"   height="100">
+          <h3>Municipales</h3>
+          <p><i>Ne vous abstenez pas de savoir.</i> Visualisation interactive des taux d'abstention aux elections municipales françaises. <br/>Chavalarias & Leenart 2014</p>
+          <p><a class="btn btn-primary" href="http://municipales.iscpif.fr">View details &raquo;</a></p>
+
+          
+           <br/><br/>        
+          <img class="img-circle" src="images/bias.png"   height="100">
+          <h3>Beware : bias are everywhere !</h3>
+          <p>We used advanced text-mining and clustering techniques to evaluate 17,265,924 items from PubMed (1958-2008). We considered 235 bias terms and 103 other terms that appear commonly in articles dealing with bias.<br/>Ioannidis and Chavalarias 2010</p>
+          <p><a class="btn btn-primary" href="#">View details &raquo;</a></p>
         </div><!-- /.span4 -->
 
       </div><!-- /.span9 -->
