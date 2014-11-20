@@ -1,0 +1,374 @@
+    <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>TINA - Digital Hunamities@ISC-PIF</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+  <!-- Le styles -->
+  <link href="docs/assets/css/bootstrap.css" rel="stylesheet">
+  <link href="docs/assets/css/bootstrap-responsive.css" rel="stylesheet">
+  <style>
+
+      /* GLOBAL STYLES
+      -------------------------------------------------- */
+      /* Padding below the footer and lighter body text */
+
+     /* CUSTOMIZE THE PLAYER
+     -------------------------------------------------- */
+
+
+
+     body {
+      padding-bottom: 40px;
+      color: #5a5a5a;
+      background-color: rgba(0,0,0,.9)
+    }
+
+      /* CUSTOMIZE THE NAVBAR
+      -------------------------------------------------- */
+
+      /* Special class on .container surrounding .navbar, used for positioning it into place. */
+      .navbar-wrapper {
+        position: absolute;      
+        top: 0;
+        opacity: 0.8;
+        left: 0;
+        right: 0;
+        z-index: 10;
+        margin-top: 20px;
+         /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+      }
+      .navbar-wrapper .navbar {
+
+      }
+
+      /* Remove border and change up box shadow for more contrast */
+      .navbar .navbar-inner {
+        border: 0;
+        -webkit-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+        -moz-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+        box-shadow: 0 2px 10px rgba(0,0,0,.25);
+      }
+
+      /* Downsize the brand/project name a bit */
+      .navbar .brand {
+        padding: 14px 20px 16px; /* Increase vertical padding to match navbar links */
+        font-size: 16px;
+        font-weight: bold;
+        text-shadow: 0 -1px 0 rgba(0,0,0,.5);
+      }
+
+      /* Navbar links: increase padding for taller navbar */
+      .navbar .nav > li > a {
+        padding: 15px 20px;
+      }
+
+      /* Offset the responsive button for proper vertical alignment */
+      .navbar .btn-navbar {
+        margin-top: 10px;
+      }
+
+
+
+      /* MARKETING CONTENT
+      -------------------------------------------------- */
+
+      /* Center align the text within the three columns below the carousel */
+      .marketing .span4 {
+        text-align: left;
+      }
+      .marketing h2 {
+        font-weight: normal;
+        text-align: center;
+      }
+      .marketing .span4 p {
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+
+
+      /* Featurettes
+      ------------------------- */
+
+      .featurette-divider {
+        margin: 80px 0; /* Space out the Bootstrap <hr> more */
+      }
+      .featurette {
+        padding-top: 120px; /* Vertically center images part 1: add padding above and below text. */
+        overflow: hidden; /* Vertically center images part 2: clear their floats. */
+      }
+      .featurette-image {
+        margin-top: -120px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
+      }
+
+      /* Give some space on the sides of the floated elements so text doesn't run right into it. */
+      .featurette-image.pull-left {
+        margin-right: 40px;
+      }
+      .featurette-image.pull-right {
+        margin-left: 40px;
+      }
+
+      /* Thin out the marketing headings */
+      .featurette-heading {
+        font-size: 50px;
+        font-weight: 300;
+        line-height: 1;
+        letter-spacing: -1px;
+      }
+
+
+
+      /* RESPONSIVE CSS
+      -------------------------------------------------- */
+   @media (max-width: 1550px) {
+
+        .container.navbar-wrapper {
+          margin-bottom: 0;
+          width: auto;
+        }
+      
+        .carousel .item {
+          height: 520px;
+        }
+
+      }
+    @media (max-width: 1300px) {
+      .container.navbar-wrapper {
+          margin-bottom: 0;
+          width: auto;
+        }
+        
+        .carousel .item {
+          height: 450px;
+        }
+
+      }
+
+       @media (max-width: 1150px) {
+        .container.navbar-wrapper {
+          margin-bottom: 0;
+          width: auto;
+        }
+       
+        .carousel .item {
+          height: 400px;
+        }
+
+      }
+
+      @media (max-width: 979px) {
+        .container.navbar-wrapper {
+          margin-bottom: 0;
+          width: auto;
+        }
+        .navbar-inner {
+          border-radius: 0;
+          margin: -20px 0;
+        }
+        .carousel .item {
+          height: 300px;
+        }
+      .carousel .container {
+        margin-left: 30px;
+        
+        
+      }
+
+      }
+
+      @media (max-width: 900px) {
+      .carousel-caption h1 {
+          font-size: 20px;
+        }
+        .carousel-caption .lead,
+        .carousel-caption .btn {
+          font-size: 14px;
+        }
+        .detail {
+          font-size: 10px;
+        }
+
+        .carousel-control {
+        height: 50px;
+        margin-top: 0;
+        font-size: 60px;
+        text-shadow: 0 1px 1px rgba(0,0,0,.4);
+        background-color: transparent;
+        border: 0;
+        z-index: 10;
+      }
+       
+      }
+
+
+    </style>
+
+  </head>
+
+  <body>
+
+
+      <!-- NAVBAR
+      ================================================== -->
+      <div class="navbar-wrapper">
+        <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
+        <div class="container">
+
+          <div class="navbar navbar-inverse">
+            <div class="navbar-inner">
+              <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
+              <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="brand" href="index.html">Digital Humanities@ISC-PIF</a>
+              <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
+              <div class="nav-collapse collapse">
+                <ul class="nav">
+                  <li class="active"><a href="#">Gallery</a></li>
+                  <li><a href="contact.html">Contact & Contributors</a></li>
+                  <!-- Read about Bootstrap dropdowns at http://twitter.github.com/bootstrap/javascript.html#dropdowns -->
+                  
+                </ul>
+              </div><!--/.nav-collapse -->
+            </div><!-- /.navbar-inner -->
+          </div><!-- /.navbar -->
+        </div> <!-- /.container -->
+      </div><!-- /.navbar-wrapper -->
+
+
+     
+        <!-- Marketing messaging and featurettes
+        ================================================== -->
+        <!-- Wrap the rest of the page in another container to center all the content. -->
+
+
+
+        <div class="container marketing">
+        <img src="images/places.png" alt="" style="min-width:100%">
+
+          <!-- Three columns of text below the carousel -->
+          <div class="row">
+            <h1>Contributors @ISC-PIF</h1>
+           </div> 
+          <div class="row">
+            <div class="span2">
+        <h2>Contact</h2>
+        David Chavalarias, David dot chavalarias hat iscpif dot fr
+
+          </div><!-- /.span4 -->
+        <div class="span5">        
+        <div class="row">
+            <div class="span2">
+            <img class="img-circle" src="images/david.png"   height="100px">
+            </div>
+            <div class="span3">
+              <b>David Chavalarias</b>, CNRS permanent researcher @ISC-PIF/CAMS, socio-semantic networks, social mining and cultural dynamics modelling.
+            </div>
+        </div>
+        <br/>
+        <div class="row">
+            <div class="span2">
+            <img class="img-circle" src="images/samuel.png"   height="100px">
+            </div>
+            <div class="span3">
+              <b>Samuel Castillo</b>, CNRS engineer @ISC-PIF, data visualisation
+            </div>
+        </div>
+        <br/>
+        <div class="row">
+            <div class="span2">
+            <img class="img-circle" src="images/maziyar.png"   height="100px">
+            </div>
+            <div class="span3">
+              <b>Maziyar Panahi</b>, CNRS engineer @ISC-PIF, Science en Poche project. Big Data and mobile app for citizen science
+            </div>
+        </div>
+        <br/>
+        
+        </div><!-- /.span4 -->
+        <div class="span5">
+          <div class="row">
+            <div class="span2">
+            <img class="img-circle" src="images/alex.png"   height="100px">
+            </div>
+            <div class="span3">
+              <b>Alexandre Delanöe</b>, CNRS researcher @CAMS/ISC-PIF, FORCCAST project.  Socio-semantic networt reconstruction, controversies analysis.
+            </div>
+        </div>
+        <br/>  
+        <div class="row">
+            <div class="span2">
+            <img class="img-circle" src="images/JP.png"   height="100px">
+            </div>
+            <div class="span3">
+              <b>Jean-Philippe Cointet</b>, INRA permanent researcher @INRA SenS, Morphogenesis of socio-semantic networks, Knowledge dynamics representation, Diffusion process in social networks.
+            </div>
+        </div>
+        <br/>  
+        <div class="row">
+            <div class="span2">
+            <img class="img-circle" src="images/JB.png"   height="100px">
+            </div>
+            <div class="span3">
+              <b>Jean-Baptiste Leenart</b>, independant researcher, mobile apps for science and free will.
+            </div>
+        </div>
+
+        </div><!-- /.span4 -->
+      </div>
+
+   
+      <!-- FOOTER -->
+      <footer>
+        <br/><br/>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2014 Complex Systems Institute Paris Île-de-France</p>
+      </footer>
+
+    </div><!-- /.container -->
+
+
+
+      <!-- Le javascript
+      ================================================== -->
+      <!-- Placed at the end of the document so the pages load faster -->
+      <script src="docs/assets/js/jquery.js"></script>
+      <script src="docs/assets/js/bootstrap-transition.js"></script>
+      <script src="docs/assets/js/bootstrap-alert.js"></script>
+      <script src="docs/assets/js/bootstrap-modal.js"></script>
+      <script src="docs/assets/js/bootstrap-dropdown.js"></script>
+      <script src="docs/assets/js/bootstrap-scrollspy.js"></script>
+      <script src="docs/assets/js/bootstrap-tab.js"></script>
+      <script src="docs/assets/js/bootstrap-tooltip.js"></script>
+      <script src="docs/assets/js/bootstrap-popover.js"></script>
+      <script src="docs/assets/js/bootstrap-button.js"></script>
+      <script src="docs/assets/js/bootstrap-collapse.js"></script>
+      <script src="docs/assets/js/bootstrap-carousel.js"></script>
+      <script src="docs/assets/js/bootstrap-typeahead.js"></script>
+      <script>
+      !function ($) {
+        $(function(){
+            // carousel demo
+            $('#myCarousel').carousel({
+          interval: 10000        
+        }).carousel('pause');
+          })
+      }(window.jQuery)
+      </script>
+
+      <script>
+      $(document).ready(function(){
+      
+      });
+      </script>
+
+      <script src="docs/assets/js/holder/holder.js"></script>
+
+    </body>
+    </html>
